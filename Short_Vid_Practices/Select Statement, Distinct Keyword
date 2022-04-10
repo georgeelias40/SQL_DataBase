@@ -1,0 +1,68 @@
+/*
+ Select statement:
+
+ 1. Selecting entire columns from a table:
+ Select * from TableName;
+
+ 2. Selecting a single column from a table:
+ Select ColumnName TableName;
+
+ 3. Selecting Multiple Columns from a table:
+    Select ColumnName1, ColumnName2 .. from table;
+
+ 4. Selecting Colum(s) from Multiple tables
+  Select TableName1.ColumnName1, TableName2.ColumnName2 from TableName1, TableName2;
+ */
+
+SELECT * FROM DEPARTMENTS;--this will show me the entire by using (*) column DEPARTMENTS TABLE
+SELECT DEPARTMENT_NAME FROM DEPARTMENTS; -- this will allow me to specify a single column from a table
+SELECT DEPARTMENT_NAME, DEPARTMENT_ID FROM DEPARTMENTS;--Selecting Multiple Columns from a table:
+--and to avoid misspelling names by using shortcuts==> click ctrl+space it will show you what the table have
+
+SELECT * FROM EMPLOYEES;
+SELECT * FROM DEPARTMENTS;
+
+SELECT * FROM EMPLOYEES,DEPARTMENTS;
+
+SELECT EMPLOYEES.EMPLOYEE_ID, DEPARTMENTS.DEPARTMENT_ID  FROM EMPLOYEES, DEPARTMENTS;--Selecting Colum(s) from Multiple tables
+
+
+/*
+ DISTINCT KEYWORD: Displays the results without the Duplicated values
+ */
+
+SELECT DISTINCT DEPARTMENT_ID FROM DEPARTMENTS;
+SELECT DISTINCT SALARY FROM EMPLOYEES;
+
+SELECT MAX_SALARY FROM JOBS;
+SELECT DISTINCT MAX_SALARY FROM JOBS;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
