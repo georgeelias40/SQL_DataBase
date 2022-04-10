@@ -93,12 +93,14 @@ SELECT FIRST_NAME , SUBSTR(FIRST_NAME, 0, 1) FROM EMPLOYEES;
 SELECT SUBSTR(FIRST_NAME, 0, 1) || SUBSTR(LAST_NAME,0,1) FROM EMPLOYEES;
 
 
---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
 
+--Trim(value):it removes "white spaces"
+SELECT FIRST_NAME FROM EMPLOYEES;
+SELECT   CONCAT(  '       ' ,  FIRST_NAME) FROM EMPLOYEES;-- will display first name with spaces
 
-
-
+SELECT   TRIM(   CONCAT(  '       ' ,  FIRST_NAME) )FROM EMPLOYEES;-- will display first name without spaces
 
 
 
